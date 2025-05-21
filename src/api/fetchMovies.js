@@ -1,4 +1,4 @@
-export const fetchMovies= async(searchText,moviesCallback,errorCallback) =>{
+export const fetchMovies= async(searchText,moviesCallback,errorCallback,finallyCallback) =>{
     try{
         const response=await fetch(`http://www.omdbapi.com/?s=${searchText}&apikey=f762b390`)
         const data=await response.json();
@@ -19,6 +19,8 @@ export const fetchMovies= async(searchText,moviesCallback,errorCallback) =>{
     }catch(err){
         moviesCallback([]);
         errorCallback('An error occured while fetching movie data');
+    }finally{
+        finallyCallback()
     }
 };
 

@@ -14,7 +14,7 @@ function MoviePortal(){
 
     const onEnteredSearch= (e) =>{
         e.preventDefault();
-        fetchMovies(searchInputText,setMovies,setError)
+        fetchMovies(searchInputText,setMovies,setError, ()=>setEnteredSearchText(searchInputText))
         setEnteredSearchText(searchInputText);
     };
     
