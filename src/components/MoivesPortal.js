@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { fetchMovies } from "../api/fetchMovies";
+import ErrorAlert from "./ErrorAlert";
 
 function MoviePortal(){
 
@@ -30,6 +31,8 @@ function MoviePortal(){
             </form>
             </div>
         </div>
+        {error && <ErrorAlert error={error} searchTerm={enteredSearchText} />}
+        {movies.length>0 && <p className='text-light'>Showing {movies.length} Movies for '{enteredSearchText}'</p>}
         {enteredSearchText}
         {JSON.stringify(movies)}
         {error}
