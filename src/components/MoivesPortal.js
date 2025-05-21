@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { fetchMovies } from "../api/fetchMovies";
 import ErrorAlert from "./ErrorAlert";
-
+import MovieDetail from "./MovieDetail";
 function MoviePortal(){
 
     const [searchInputText,setSearchInputText]=useState('')
@@ -33,9 +33,9 @@ function MoviePortal(){
         </div>
         {error && <ErrorAlert error={error} searchTerm={enteredSearchText} />}
         {movies.length>0 && <p className='text-light'>Showing {movies.length} Movies for '{enteredSearchText}'</p>}
-        {enteredSearchText}
-        {JSON.stringify(movies)}
-        {error}
+         {movies.map((movie) => (
+                <MovieDetail key={movie.imdbID} movie={movie} />
+            ))}
         </>
     );
 }
