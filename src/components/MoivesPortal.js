@@ -1,12 +1,19 @@
 import { useState } from "react";
+import { fetchMovies } from "../api/fetchMovies";
 
 function MoviePortal(){
 
     const [searchInputText,setSearchInputText]=useState('')
     const [enteredSearchText,setEnteredSearchText]=useState('')
-    
+    const [movies,setMovies]=useState([])
+    const [error,setError]=useState(null)
+
+
+
+
     const onEnteredSearch= (e) =>{
         e.preventDefault();
+        fetchMovies(searchInputText,setMovies,setError)
         setEnteredSearchText(searchInputText);
     };
     
@@ -24,6 +31,8 @@ function MoviePortal(){
             </div>
         </div>
         {enteredSearchText}
+        {JSON.stringify(movies)}
+        {error}
         </>
     );
 }
