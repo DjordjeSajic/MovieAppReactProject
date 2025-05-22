@@ -4,7 +4,7 @@ function MovieDetail({movie}){
         <>
             <div className="row">
                 <div className="col-md-2 image-container">
-                    <img src={movie.Poster} alt={movie.Title} width='100%'height='80%' />
+                    <img src={movie.Poster} className='poster' alt={movie.Title} />
                     <div className='overlay d-flex align-items-center justify-content-center'>
                           <a href={`https://www.youtube.com/results?search_query=${movie.Title} trailer`}>Watch Trailer</a>
                     </div>
