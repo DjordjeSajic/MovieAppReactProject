@@ -1,5 +1,5 @@
 .image-container:hover .poster{
-    height: 80%;
+    height: 100%;
     width: 100%;
 }
 
@@ -8,34 +8,58 @@
     cursor: pointer;
     scale: 1.1;
     transition: 1s;
+    z-index: 10;
 }
 .image-container:hover .overlay{
  opacity: 1;
 }
+.image-container{
+        position: relative;
+       padding: 0px;
+       height: 300px;
+       width: 200px;
+       padding-bottom: 0px;
+}
+.image-container img{
+ 
+    height: 300px;
+    width: 200px;
+    object-fit: fill;
+}
 
 .overlay{
-    position:relative;
+    position:absolute;
     background-color: rgba(0,0,0,0.7);
     width: 100%;
     transition: 0.5s ease;
     opacity: 0;
     bottom: 0;
     font-size: 15px;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
 }
-.poster{
-    height: 90%;
-    width: 100%;
-}
+
 .card{
     margin: 0px;
     border: 0px;
     padding-left:0px;
+    padding-right: 10px;
 }
 .card-col{
     padding-left: 0px;
 }
+.card{
+    height: 300px;
+    width: 400px;
+}
+.card-text{
+    height: 150px;
+    width: auto;
+    overflow-y: auto;
+}
+.card-link{
+    text-align: center;
+}
 .movie-row{
-    padding: 5px;
+    padding-bottom: 30px;
 }

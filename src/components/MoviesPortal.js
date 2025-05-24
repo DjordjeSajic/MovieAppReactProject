@@ -37,6 +37,7 @@ function MoviePortal(){
            <div className="movie-container">
                      {movies.map((movie) => (
                 <MovieDetail key={movie.imdbID} movie={movie} />
+               
             ))}
             </div>
         </>

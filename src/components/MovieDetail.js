@@ -14,8 +14,8 @@ function MovieDetail({movie}){
                         <div class="card-body">
                             <h3 class="card-title">{movie.Title}</h3>
                             <h6 class="card-subtitle mb-2 text-muted">{movie.Released}</h6>
-                            <p class="card-text">{movie.Plot}</p>
                             <a href={`https://www.imdb.com/title/${movie.imdbID}`} class="card-link">IMDB </a>
+                            <div class="container card-text">{movie.Plot}</div>
                         </div>
                     </div>
                 </div>
