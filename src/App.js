@@ -1,14 +1,12 @@
-import 'bootstrap/dist/js/bootstrap.js';
-import 'bootswatch/dist/darkly/bootstrap.min.css'
 import Header from './components/Header';
 import MoviePortal from './components/MoviesPortal';
-
+import "./css/style.css"
 function App () {
   return(
-    <div>
+    <div className='App'>
       <Header/>
       <br />
-      <div className='container'>
+      <div className='container' >
         <MoviePortal/>
       </div>
 

@@ -16,17 +16,14 @@
  opacity: 1;
 }
 .image-container{
-        position: relative;
        padding: 0px;
-       height: 300px;
-       width: 200px;
        padding-bottom: 0px;
+        height: 300px;
+        width: 100px;
 }
 .image-container img{
- 
-    height: 300px;
-    width: 200px;
-    object-fit: fill;
+        height: 305px;
+        width: 190px;
 }
 
 
@@ -44,14 +41,11 @@
 }
 
 .card{
-    margin: 0px;
+    height: 300px;
+    width: 300px;
+     margin: 0px;
     border: 0px;
     padding-left:0px;
-}
-
-.card{
-    height: 300px;
-    width: 350px;
 }
 .card-text{
     height: 150px;
@@ -71,15 +65,24 @@
     overflow-y:auto;
 }
 .card-col{
+    width: 200px;
     padding-left: 0px;
+}
+.card-body{
+    background-color: #00bc8c;
 }
 
 @media only screen and (max-width:800px) {
-   .card,.card-col,.image-container,.image-container img{
+   
+   
+ .card,.card-col{
         width: 100%;
     }
-    .image-container{
-        object-fit: fill;
+ .image-container img,.image-container{
+    width: 100%;
+ }   
+    .image-container img{
+        object-fit:contain;
     }
 
 

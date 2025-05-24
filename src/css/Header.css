@@ -1,0 +1,10 @@
+.top-bar{
+    background: #00bc8c;
+    min-height:100px;
+    width: auto;
+}
+p{
+    text-align: left;
+    font-size:40px;
+    color:white;
+}

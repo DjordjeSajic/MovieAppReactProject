@@ -3,6 +3,7 @@ import { fetchMovies } from "../api/fetchMovies";
 import ErrorAlert from "./ErrorAlert";
 import MovieDetail from "./MovieDetail";
 import "../css/MoviesPortal.css"
+import "../css/style.css"
 function MoviePortal(){
 
     const [searchInputText,setSearchInputText]=useState('')
@@ -21,20 +22,21 @@ function MoviePortal(){
     
     return(
         <>
-        <div className="row">
-            <div className="col-md-12">
+        <div class="row">
+            <div class="col-12">
             <form onSubmit={onEnteredSearch}>
                 <input
-                    type="text" placeholder="Search" className="form-control"
+                    type="text" placeholder="Search..." className="form-input"
                     value={searchInputText}
                     onChange={(e) => setSearchInputText(e.target.value)} 
                     />
+                <input type="submit" value="⌕" onSubmit={onEnteredSearch} className="form-button"/>
             </form>
             </div>
         </div>
         {error && <ErrorAlert error={error} searchTerm={enteredSearchText} />}
-        {movies.length>0 && <p className='text-light'>Showing {movies.length} Movies for '{enteredSearchText}'</p>}
-           <div className="container movie-container x">
+        {movies.length>0 && <p className="search">Showing {movies.length} Movies for '{enteredSearchText}'</p>}
+           <div className="container movie-container">
                      {movies.map((movie) => (
                 <MovieDetail key={movie.imdbID} movie={movie} />
                
