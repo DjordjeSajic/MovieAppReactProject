@@ -3,13 +3,13 @@ function MovieDetail({movie}){
    return (
         <>
             <div className="row movie-row">
-                <div className="col-md-5 image-container">
+                <div className="col-md-6 image-container">
                     <img src={movie.Poster} className='poster' alt={movie.Title} />
                     <div className='overlay d-flex align-items-center justify-content-center'>
                           <a href={`https://www.youtube.com/results?search_query=${movie.Title} trailer`}>Watch Trailer</a>
                     </div>
                 </div>
-                <div class='col-md-7 card-col'>
+                <div class='col-md-6 card-col'>
                     <div class="card">
                         <div class="card-body">
                             <h3 class="card-title">{movie.Title}</h3>
