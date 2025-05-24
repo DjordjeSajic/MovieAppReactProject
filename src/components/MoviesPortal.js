@@ -26,11 +26,11 @@ function MoviePortal(){
             <div class="col-12">
             <form onSubmit={onEnteredSearch}>
                 <input
-                    type="text" placeholder="Search..." className="form-input"
+                    type="text" placeholder="Search..." className="form-input" id="search-bar"
                     value={searchInputText}
                     onChange={(e) => setSearchInputText(e.target.value)} 
                     />
-                <input type="submit" value="⌕" onSubmit={onEnteredSearch} className="form-button"/>
+                <input type="submit" value="⌕" id="search-submit" onSubmit={onEnteredSearch} className="form-button"/>
             </form>
             </div>
         </div>

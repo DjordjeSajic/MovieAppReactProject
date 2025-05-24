@@ -15,6 +15,17 @@ const ToggleDarkMode=()=>{
             btn.style.backgroundColor=isDarkMode? "#030247":" #FFFFC5";
             btn.style.color=isDarkMode? "white":"black";
         }
+        const searchBar=document.getElementById("search-bar");
+        if(searchBar){
+            searchBar.style.backgroundColor=isDarkMode? "black":" white";
+            searchBar.style.color=isDarkMode? "white":"black";
+        }
+
+        const searchSubmit=document.getElementById("search-submit");
+        if(searchSubmit){
+            searchSubmit.style.backgroundColor=isDarkMode?"black":"white";
+            searchSubmit.style.color=isDarkMode?"white":"black"
+        }
              
 
     },[isDarkMode])
