@@ -63,3 +63,8 @@
 .movie-row{
     padding-bottom: 30px;
 }
+.card-title{
+    width: auto;
+    height: 50px;
+    overflow-y:auto;
+}
