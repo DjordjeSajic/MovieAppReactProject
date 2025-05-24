@@ -34,7 +34,7 @@ function MoviePortal(){
         </div>
         {error && <ErrorAlert error={error} searchTerm={enteredSearchText} />}
         {movies.length>0 && <p className='text-light'>Showing {movies.length} Movies for '{enteredSearchText}'</p>}
-           <div className="movie-container">
+           <div className="container movie-container x">
                      {movies.map((movie) => (
                 <MovieDetail key={movie.imdbID} movie={movie} />
                

@@ -1,4 +1,4 @@
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1200px) {
 .movie-container{
     grid-template-columns: repeat(2,1fr);
    
@@ -7,6 +7,4 @@
 .movie-container{
     display: grid;
     gap: 0px;
-    height: 400px;
-    width: 1200px;
 }
