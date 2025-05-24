@@ -28,3 +28,14 @@
     height: 90%;
     width: 100%;
 }
+.card{
+    margin: 0px;
+    border: 0px;
+    padding-left:0px;
+}
+.card-col{
+    padding-left: 0px;
+}
+.movie-row{
+    padding: 5px;
+}
