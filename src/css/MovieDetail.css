@@ -1,8 +1,31 @@
+@media only screen and (max-width:500px) {
+   
+   
+ .card,.card-col{
+        width: 100%;
+    }
+ .image-container img,.image-container{
+    width: 100%;
+ }   
+  
 
 .image-container:hover .poster{
     height: 100%;
     width: 100%;
 }
+
+.image-container:hover{
+    cursor: pointer;
+    scale: 1.1;
+    transition: 1s;
+    z-index: 10;
+}
+.image-container:hover .overlay{
+ opacity: 1;
+}
+}
+
+
 @media only screen and (min-width:400px) {
 .image-container:hover{
     cursor: pointer;
@@ -12,18 +35,24 @@
 }    
 }
 
+
+.image-container:hover .poster{
+    height: 100%;
+    width: 100%;
+}
+
 .image-container:hover .overlay{
  opacity: 1;
 }
 .image-container{
        padding: 0px;
-       padding-bottom: 0px;
         height: 300px;
         width: 100px;
+        position: st;
 }
 .image-container img{
         height: 305px;
-        width: 190px;
+        width: 130px;
 }
 
 
@@ -41,11 +70,14 @@
 }
 
 .card{
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
      margin: 0px;
     border: 0px;
     padding-left:0px;
+    display: block;
+    position: static;
+    padding-right: auto;
 }
 .card-text{
     height: 150px;
@@ -73,32 +105,4 @@
     background-color: #00bc8c;
 }
 
-@media only screen and (max-width:800px) {
-   
-   
- .card,.card-col{
-        width: 100%;
-    }
- .image-container img,.image-container{
-    width: 100%;
- }   
-    .image-container img{
-        object-fit:contain;
-    }
 
-
-.image-container:hover .poster{
-    height: 100%;
-    width: 100%;
-}
-
-.image-container:hover{
-    cursor: pointer;
-    scale: 1.1;
-    transition: 1s;
-    z-index: 10;
-}
-.image-container:hover .overlay{
- opacity: 1;
-}
-}

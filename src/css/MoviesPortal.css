@@ -1,8 +1,13 @@
 @media screen and (min-width: 1200px) {
 .movie-container{
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
    
 }    
+}
+@media  screen and (min-width:800px) and (max-width:1200px) {
+  .movie-container{
+    grid-template-columns: repeat(2,1fr);
+  }
 }
 .movie-container{
     display: grid;
@@ -26,7 +31,7 @@
 }
 .form-button{
     height: 50px;
-    width: 8.5%;
+    width: 10%;
     border-radius: 5px;
     cursor: pointer;
     border: solid;
@@ -41,7 +46,4 @@
 }
 .card-link{
     color:darkgreen
-}
-.body-container{
-    margin: 30px;
 }
