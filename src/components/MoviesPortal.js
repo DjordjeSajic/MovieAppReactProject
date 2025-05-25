@@ -22,8 +22,8 @@ function MoviePortal(){
     
     return(
         <>
-        <div class="row">
-            <div class="col-12 container-fixed">
+        <div className="row">
+            <div className="col-12 container-fixed">
             <form onSubmit={onEnteredSearch}>
                 <input
                     type="text" placeholder="Search..." className="form-input" id="search-bar"
