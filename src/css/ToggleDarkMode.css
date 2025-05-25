@@ -1,10 +1,36 @@
-button{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 0px;
+#tdm{
+    height: 0px;
+    width: 0px;
+    visibility: hidden;
+}
+label{
+    width: 100px;
+    height: 50px;
+    position: relative;
+    display: block;
+    background-color: whitesmoke;
+    border-radius: 50px;
+    box-shadow:inset 0px 5px 15px rgba(0,0,0,0.4),inset 0px -5px 15px rgba(255,255,255,0,4);
+    cursor: pointer;
+    transition: 0.3s;
+}
+label::after{
+    content: "";
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top:10px;
+    left: 10px;
+    background: linear-gradient(180deg,#ffcc89,#d8860b);
+    border-radius:40px;
+    transition: 0.3s;
+}
+input:checked+label{
+    background-color:#242424;
+}
+input:checked+label::after{
+    left:90px;
+    transform: translatex(-100%);
+    background:linear-gradient(180deg,#777,#3a4a4a);
+
 }

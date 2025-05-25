@@ -31,7 +31,8 @@ const ToggleDarkMode=()=>{
     },[isDarkMode])
     return (
         <div>
-        <button id="tdm" onClick={DarkModeOn}></button>
+        <input type="checkbox" id="tdm" onClick={DarkModeOn}></input>
+        <label for="tdm"></label>
         </div>
     )
 }
