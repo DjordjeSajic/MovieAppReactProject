@@ -6,7 +6,9 @@ function Header(){
         <>
         <div className="container-fluid top-bar">
             <p>MovieReview</p>
+            <div className="toggledarkmode">
               <ToggleDarkMode/>
+            </div>
               <br/>
         
         </div>

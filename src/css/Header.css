@@ -8,3 +8,11 @@ p{
     font-size:40px;
     color:white;
 }
+.toggledarkmode{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding-left: 80%;
+    padding-bottom: 10px;
+    padding-right: 10%;
+}

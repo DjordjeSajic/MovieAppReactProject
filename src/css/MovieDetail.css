@@ -51,6 +51,7 @@
     height: 150px;
     width: auto;
     overflow-y: auto;
+    padding-left: 0px;
 }
 .card-link{
     text-align: center;

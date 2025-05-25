@@ -14,6 +14,7 @@
     border-radius: 5px;
     cursor: pointer;
     padding: 10px 15px;
+    padding-top: 12px;
     color: black;
     border: solid;
     border-radius: 1px;
@@ -29,11 +30,11 @@
     border-radius: 5px;
     cursor: pointer;
     border: solid;
-    border-radius: 1px;
     border-color: #00bc8c;
     padding: 10px 15px;
     color: black;
     background-color: white(50, 48, 48, 0.8);
+    
 }
 .search{
     color:#00bc8c;
