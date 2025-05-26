@@ -8,10 +8,13 @@
   .movie-container{
     grid-template-columns: repeat(2,1fr);
   }
+  
 }
 .movie-container{
     display: grid;
     gap: 5px;
+    align-items:start;
+    
 }
 .form-input{
     height: 50px;
